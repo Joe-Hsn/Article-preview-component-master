@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- [Live site](https://your-live-site-url.com)
+- [Live site](https://joe-hsn.github.io/Article-preview-component-master/)
 
 ## My process
 
