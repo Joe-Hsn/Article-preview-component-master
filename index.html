@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Article preview component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="d-flex justify-content-center align-items-center">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-5">
+            <img src="images/drawers.jpg" alt="drawers">
+          </div>
+          <div class="col-md-7 p-4">
+            <h1 class="h3">Shift the overall look and feel by adding these wonderful
+              touches to furniture in your home</h1>
+
+            <span class=" d-block card-text my-3 mb-4">Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I've got some simple tips
+              to help you make any room feel complete.</span>
+            <div class="author d-flex align-items-center">
+              <img src="images/avatar-michelle.jpg" alt="Michelle author" class="me-3">
+              <div class="name me-auto">
+                <a href="#">Michelle Appleton</a>
+                <span class="date d-block">28 Jun 2020</span>
+              </div>
+
+              <div class="effect">
+                <div class="share d-none align-items-center text-light p-3 px-4 rounded">
+                  <span class="me-2">Share</span>
+                  <a href="#"><img src="images/icon-facebook.svg" alt=" facebook icon"></a>
+                  <a href="#"><img src="images/icon-pinterest.svg" alt=" pinterest icon"></a>
+                  <a href="#"><img src="images/icon-twitter.svg" alt=" twitter icon"></a>
+                </div>
+                <button role="button" class="btn rounded-circle">
+                  <img src="images/icon-share.svg" alt="Share icon">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution d-none d-md-block bg-dark p-3 rounded">
+      Challenge by <a class="p-1 bg-primary rounded text-light" href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank">Frontend Mentor</a>
+      Coded by <a class="p-1 bg-primary rounded text-light" href="https://t.me/Joe_Hsn">Youssef Hassan</a>
+    </div>
+  </main>
+  <script>
+    let btn = document.querySelector('.btn');
+    btn.addEventListener("click", () => {
+      let share = document.querySelector('.share');
+      if (share.classList.contains('d-none')) {
+        share.classList.replace('d-none', 'd-flex');
+      } else if (share.classList.contains('d-flex')) {
+        share.classList.replace('d-flex', 'd-none');
+      }
+    });
+  </script>
+</body>
+
+</html>
